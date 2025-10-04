@@ -66,6 +66,25 @@ for(i in 1:10){
 
 
 
+# 6.data analysis 
+
+cols<-c("age","workclass","fnlwgt","education","education_num",
+        "material_status","occupation","relationship","race","sex",
+        "native_country","income")
+
+adult<-read.csv("R-Language-Lab-Exercies/adult-data.txt",
+                header = FALSE , col.names = cols,
+                strip.white=TRUE , na.strings="?",
+                sringsAsFactor=FALSE)
+
+
+
+
+
+
+
+
+
 
 
 
