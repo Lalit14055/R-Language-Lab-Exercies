@@ -34,7 +34,7 @@ iris_clean$Species <-tolower(as.character(iris_clean$Species))
 iris_clean$Species <-as.factor(iris_clean$Species)
 
 
-head(iris_clean)
+# head(iris_clean)
 
 
 
