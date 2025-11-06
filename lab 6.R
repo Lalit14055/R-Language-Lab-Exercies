@@ -12,7 +12,6 @@ head(iris)
 
 #1.statistics
 summary(iris)
-
 #2.Histogram of Sepal.Length
 
 ggplot(iris,aes(x=Sepal.Length))+
