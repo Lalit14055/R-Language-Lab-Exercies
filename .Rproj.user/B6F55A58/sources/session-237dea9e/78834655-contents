@@ -29,7 +29,7 @@ plot(iris$Sepal.Length,iris$Petal.Length,
      col="lightblue",pch=19)
 
 #boxplot
-#error
+
 boxplot(Sepal.length~species ,data = iris,
         main="boxplot of sepal length by species",
         xlab = "species",ylab = "sepal length",

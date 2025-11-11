@@ -34,6 +34,7 @@ ggplot(iris,aes(x=Species,y=Sepal.Width,fill = Species))+
 
 corr_matrix =cor(iris[,1:4])
 corr_matrix
+ # error
 ggcorrplot(corr_matrix, lab=TRUE,title = "Correlation matrix")
 
 #6.Pair plot
