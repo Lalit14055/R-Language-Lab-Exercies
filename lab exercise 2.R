@@ -1,0 +1,27 @@
+#1.Import the airquality dataset and check its structure using str().
+library(dplyr)
+data("airquality")
+str(airquality)
+
+#2.Find the number of missing values in airquality.
+
+sum(is.na(airquality))
+
+#3.Use summary() on the mtcars dataset and interpret the output.
+
+data(mtcars)
+summary(mtcars)
+
+#4.Find the mean horsepower (hp) in the mtcars dataset.
+
+mean_hp<-mean(mtcars$hp)
+mean_hp
+
+#5.Group the iris dataset by species and calculate the average Sepal.Width.
+data("iris")
+iris %>%
+  group_by(Species) %>%
+  summarise(avg_Sepal.Length=mean(Sepal.Length))
+
+
+
