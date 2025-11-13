@@ -7,7 +7,21 @@ iris$Sepal.Length_category<-cut(iris$Sepal.Length,
 table(iris$Sepal.Length_category)
 
 #2.Convert Species column in iris into dummy variables (One-Hot Encoding).
-#3.
+#3.Normalized mpg in mtcars dataset
+
+data("mtcars")
+mtcars$mpg_normalized <-(mtcars$mpg -min(mtcars$mpg))/
+  (max(mtcars$mpg) -min(mtcars$mpg))
+head(mtcars$mpg_normalized)
+
+#4.Standardize the Sepal.Width column in iris.
+data("iris")
+iris$Sepal.Width_std <-scale(iris$Sepal.Width)
+head(iris$Sepal.Width_std)
+
+#5.Create a new feature in mtcars: efficiency = mpg / hp.
+
+mtcars$efficiency
 
 
 
