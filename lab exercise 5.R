@@ -20,9 +20,9 @@ iris$Sepal.Width_std <-scale(iris$Sepal.Width)
 head(iris$Sepal.Width_std)
 
 #5.Create a new feature in mtcars: efficiency = mpg / hp.
-
-mtcars$efficiency
-
+data(mtcars)
+mtcars$efficiency<-mtcars$mpg/mtcars$hp
+head(mtcars$efficiency)
 
 
 
